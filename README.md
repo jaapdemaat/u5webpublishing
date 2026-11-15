@@ -15,6 +15,7 @@ A self-paced, student-facing guide for BA Graphic Communication Design (Central 
 - An Introduction group (How this guide works, Unit 2 recap, Using AI, Inspiration, Help & resources) before the three parts
 - An Inspiration section: eight English-language long-form publications by KABK graphic design students (2015), each with what to look at and the lesson that teaches it
 - Part 2 "Make it yours": three creative directions (minimal, editorial, experimental) and three challenges, followed by optional technique lessons
+- "From website to PDF" (Lesson 21): a print stylesheet for a clean PDF, and Paged.js for a book-like PDF
 - "CSS instead of JavaScript" reference, and a help & resources section with troubleshooting answers (UAL Library, LinkedIn Learning via UAL login, MDN, debugging guide)
 - Links to W3Schools and LinkedIn Learning for each topic
 

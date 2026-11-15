@@ -637,7 +637,7 @@ section.lesson + section.lesson{ border-top: 1px solid var(--border); }
 .time{ font-size: 0.8rem; color: var(--muted); font-weight: 600; }
 .done-mark{ display: none; font-size: 0.8rem; font-weight: 700; color: var(--purple-deep); }
 .is-done .done-mark{ display: inline; }
-.lesson-promise{ font-size: 0.95rem; margin: 2px 0 0; }
+.lesson-promise{ display: block; font-size: 0.95rem; margin: 2px 0 0; }
 .lesson-promise strong{ color: var(--accent-deep); }
 .lesson-body{ padding: 0 0 44px; }
 .lesson-body > .lesson-lead{ margin-top: 0; }

@@ -25,12 +25,12 @@
   var PREVIEW_HELPER =
     "<script>document.addEventListener('click',function(e){" +
     "var a=e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href');" +
-    "if(h.charAt(0)==='#'){e.preventDefault();if(h.length>1){location.hash=h.slice(1);}else{history.replaceState(null,'',' ');scrollTo(0,0);}}" +
+    "if(h.charAt(0)==='#'){e.preventDefault();if(h.length>1){location.hash=h.slice(1);}else{location.hash='';}}" +
     "else{e.preventDefault();window.open(a.href,'_blank','noopener');}" +
     "});<\/script>";
 
   function buildDoc(html, css, forPreview) {
-    return "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n" +
+    return "<!DOCTYPE html>\n<html lang=\"en-GB\">\n<head>\n  <meta charset=\"utf-8\">\n" +
       "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n" +
       "  <title>My page</title>\n" +
       (forPreview ? "  <style>\n" + css + "\n  </style>\n" : "  <link rel=\"stylesheet\" href=\"style.css\">\n") +
