@@ -281,6 +281,8 @@
   function highlight() {
     ticking = false;
     var line = window.innerHeight * 0.35, found = null;
+    // At the very top of the page, nothing is "current" yet.
+    if (window.scrollY < 40) line = -1;
     for (var i = 0; i < targets.length; i++) {
       if (targets[i].getBoundingClientRect().top <= line) found = targets[i]; else break;
     }
@@ -318,7 +320,9 @@
     var a = e.target.closest("a[href^='#']");
     if (a) setTimeout(openForHash, 0);
   });
-  openForHash();
+  // On first arrival via a link, open the target. On a reload, keep every fold closed.
+  var nav = (performance.getEntriesByType && performance.getEntriesByType("navigation")[0]) || null;
+  if (!(nav && nav.type === "reload")) openForHash();
 
   /* ---------- Done buttons + progress (remembered in this browser) ---------- */
   var lessons = Array.prototype.slice.call(document.querySelectorAll("section.lesson[id]"))

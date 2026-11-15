@@ -36,7 +36,7 @@ The site uses no external services. Fonts are in `/fonts` (Roboto, Roboto Mono a
 | Colours, fonts, layout | `css/site.css` — palette at the top: indigo `#1F0062` (main), blue `#0B78B3` (Part 1), indigo (Part 2), brown `#68150A` (Part 3), white page background. Red `#D73220` is used for warnings. Blue and red use darker `-deep` shades for text, for contrast. |
 | Lessons, diagrams, starter code | `index.html` — each lesson is a `<section class="lesson">`; each live editor is a `<div class="playground">` holding `<textarea class="pg-src" data-lang="html">` and `data-lang="css"` |
 | Editor behaviour, contents highlight, progress | `js/playground.js` |
-| Exercise images | `images/` (sealand.jpg, dazzle-ship.jpg, collage-poster.jpg) |
+| Exercise images | `images/` (sealand.jpg, dazzle-ship.jpg, collage-poster.jpg); Inspiration thumbnails in `images/kabk/` |
 | Starter folder for students | `starter/my-critical-report/` — edit it, then re-zip it as `starter/my-critical-report.zip` |
 
 Inside a `pg-src` textarea, write code exactly as students should see it. The one exception is `&`, which must be written as `&amp;` (so `&ndash;` is typed `&amp;ndash;`).
