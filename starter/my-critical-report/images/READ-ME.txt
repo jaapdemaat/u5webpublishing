@@ -1,0 +1,5 @@
+Put your images here.
+
+- Lowercase names with hyphens, e.g. platform-poster-01.jpg
+- Under 1 MB each
+- Exported at twice the size they appear on screen

@@ -1,0 +1,3 @@
+Optional: put font files (.woff2) here if you are not using Google Fonts.
+Only use fonts whose licence allows web use.
+See Lesson 10.

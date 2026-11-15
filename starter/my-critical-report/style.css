@@ -1,0 +1,29 @@
+/* ==========================================================
+   style.css for your critical report
+   Start small. The lessons tell you what to add, and where.
+   ========================================================== */
+
+/* Boxes include their padding and border (Lesson 9) */
+* {
+  box-sizing: border-box;
+}
+
+/* Images never get wider than their column (Lesson 6) */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 24px;
+}
+
+/* Lesson 10: type for reading. Add font-size, line-height
+   and a max-width for your text here. */
+
+
+/* Lesson 11 and 12: layout and phone-to-laptop. */
+
