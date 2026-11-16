@@ -263,6 +263,8 @@ h3:first-child{ margin-top: 0; }
   font-weight: 800;
 }
 .part-intro p{ color: var(--ink); max-width: 720px; }
+/* Part 3 banner uses the same light pink as the Part 2 banner */
+.part--nojs .part-intro{ background: var(--indigo-tint); }
 
 /* ---------- Callouts ---------- */
 .callout{
