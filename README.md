@@ -33,7 +33,7 @@ The site uses no external services. Fonts are in `/fonts` (Roboto, Roboto Mono a
 
 | What | Where |
 | --- | --- |
-| Colours, fonts, layout | `css/site.css` — palette at the top: indigo `#1F0062` (main), blue `#0B78B3` (Part 1), indigo (Part 2), cream `#F9ECE5` with indigo (Part 3), white page background. Red `#D73220` is used for warnings. Blue and red use darker `-deep` shades for text, for contrast. |
+| Colours, fonts, layout | `css/site.css` — palette at the top: indigo `#1F0062` (main), blue `#0B78B3` (Part 1), indigo (Part 2), indigo (Part 3), white page background. Red `#D73220` is used for warnings. Blue and red use darker `-deep` shades for text, for contrast. |
 | Lessons, diagrams, starter code | `index.html` — each lesson is a `<section class="lesson">`; each live editor is a `<div class="playground">` holding `<textarea class="pg-src" data-lang="html">` and `data-lang="css"` |
 | Editor behaviour, contents highlight, progress | `js/playground.js` |
 | Exercise images | `images/` (sealand.jpg, dazzle-ship.jpg, collage-poster.jpg); Inspiration thumbnails in `images/kabk/` |

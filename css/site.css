@@ -16,7 +16,7 @@
 @font-face{ font-family:"Roboto Mono"; src:url("../fonts/roboto-mono-latin-600-normal.woff2") format("woff2"); font-weight:600; font-display:swap; }
 
 /* Palette (Adobe Color): indigo #1F0062 (main), blue #0B78B3,
-   red #D73220 (warnings), cream #F9ECE5.
+   red #D73220 (warnings). Parts 2 and 3 share indigo.
    Blue and red get a darker "-deep" shade for text, because the
    original swatches are below 4.5:1 contrast as text on cream. */
 :root{
