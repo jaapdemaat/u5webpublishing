@@ -72,12 +72,14 @@
             <li><a href="#motion">19. Motion</a></li>
             <li><a href="#treatments">20. Image treatments</a></li>
             <li><a href="#print">21. From website to PDF</a></li>
+            <li><a href="#nojs">22. Effects without JavaScript</a></li>
             <li><a href="#explore">More to explore</a></li>
           </ul>
         </li>
-        <li class="toc-part toc-part--nojs"><span class="toc-part-label">🪄 Part 3: No JavaScript needed <span class="toc-time">· 15 min</span></span>
+        <li class="toc-part toc-part--learn"><span class="toc-part-label">🧭 Part 3: Keep learning</span>
           <ul>
-            <li><a href="#nojs">CSS instead of JS</a></li>
+            <li><a href="#selfteach">How to teach yourself</a></li>
+            <li><a href="#library">The reference shelf</a></li>
           </ul>
         </li>
       </ul>
@@ -221,7 +223,7 @@
 
       <div class="callout">
         <span class="label">☝️ The one rule for this unit</span>
-        <p><strong>HTML and CSS only, with no JavaScript.</strong> Most of the clever effects you'll see elsewhere can now be done with CSS (<a href="#nojs">Part 3</a>). Your site lives in a folder on your own laptop, and that's where you show it at Open Studio.</p>
+        <p><strong>HTML and CSS only, with no JavaScript.</strong> Most of the clever effects you'll see elsewhere can now be done with CSS (<a href="#nojs">Lesson 22</a>). Your site lives in a folder on your own laptop, and that's where you show it at Open Studio.</p>
       </div>
         </div>
       </details>
@@ -1947,7 +1949,7 @@ body { font-family: "EB Garamond", Georgia, serif; }</code></pre>
           <tbody>
             <tr><td><strong>🔘 Minimal &amp; clean</strong></td><td>Typography and white space, subtle interactions, content that breathes</td><td><a href="#type">10</a>, <a href="#fluid">16</a>, <a href="#motion">19</a></td></tr>
             <tr><td><strong>📰 Editorial &amp; magazine</strong></td><td>Grid layouts, bold type mixing, margin notes, drop caps</td><td><a href="#sidenotes">15</a>, <a href="#numbering">17</a>, <a href="#sticky">18</a></td></tr>
-            <tr><td><strong>🚀 Experimental &amp; expressive</strong></td><td>Unexpected layouts, playful navigation, bending web conventions</td><td><a href="#treatments">20</a>, <a href="#motion">19</a>, <a href="#nojs">Part 3</a></td></tr>
+            <tr><td><strong>🚀 Experimental &amp; expressive</strong></td><td>Unexpected layouts, playful navigation, bending web conventions</td><td><a href="#treatments">20</a>, <a href="#motion">19</a>, <a href="#nojs">22</a></td></tr>
           </tbody>
         </table>
       </div>
@@ -2920,46 +2922,17 @@ nav a::after {
       </details>
     </section>
 
-    <!-- MORE TO EXPLORE -->
-    <section id="explore" class="lesson part--advanced">
+    <!-- 22. EFFECTS WITHOUT JAVASCRIPT -->
+    <section id="nojs" class="lesson part--advanced">
       <details class="lesson-fold">
         <summary>
-          <span class="lesson-meta"><span class="lesson-kicker">Extras</span><span class="badge badge--optional">Optional extra</span><span class="time">⏱ 5 min</span><span class="done-mark">✓ Done</span></span>
-          <h2 class="lesson-title">More to explore</h2>
-          <span class="lesson-promise">You'll make: <strong>a few more tools, for the curious</strong></span>
+          <span class="lesson-meta"><span class="lesson-kicker">Lesson 22</span><span class="badge badge--optional">Optional extra</span><span class="time">⏱ 15 min</span><span class="done-mark">✓ Done</span></span>
+          <h2 class="lesson-title">🪄 Effects without JavaScript</h2>
+          <span class="lesson-promise">You'll make: <strong>a lightbox, in CSS only</strong></span>
         </summary>
         <div class="lesson-body">
-      <p class="lesson-lead">Short on time? Skip this. Curious? Each of these solves a real long-form problem.</p>
-      <div class="table-wrap">
-        <table class="ref">
-          <thead><tr><th>Tool</th><th>What it's for</th><th>Reference</th></tr></thead>
-          <tbody>
-            <tr><td><code>lang</code> on a passage</td><td>A quote in Dutch or Mandarin is read and hyphenated correctly: <code>&lt;blockquote lang="nl"&gt;</code></td><td><a href="https://www.w3schools.com/tags/att_global_lang.asp" target="_blank" rel="noopener">W3 lang</a> · LinkedIn: Supporting languages</td></tr>
-            <tr><td>Multi-column text</td><td>Newspaper-style columns for a short section or a glossary</td><td><a href="https://www.w3schools.com/css/css3_multiple_columns.asp" target="_blank" rel="noopener">W3 Columns</a></td></tr>
-            <tr><td><code>:has()</code></td><td>Style a parent by what's inside it, e.g. <code>figure:has(figcaption)</code></td><td><a href="https://www.w3schools.com/cssref/sel_has.php" target="_blank" rel="noopener">W3 :has()</a></td></tr>
-            <tr><td>Container queries</td><td>A component that adapts to its own width, not the screen's</td><td><a href="https://www.w3schools.com/cssref/atrule_container.php" target="_blank" rel="noopener">W3 @container</a></td></tr>
-            <tr><td><code>&lt;picture&gt;</code> / <code>srcset</code></td><td>A different crop of an image for phones</td><td><a href="https://www.w3schools.com/tags/tag_picture.asp" target="_blank" rel="noopener">W3 picture</a> · LinkedIn: Responsive pictures</td></tr>
-            <tr><td><code>&lt;video&gt;</code> / <code>&lt;audio&gt;</code></td><td>Local media files, with captions via <code>&lt;track&gt;</code></td><td><a href="https://www.w3schools.com/tags/tag_video.asp" target="_blank" rel="noopener">W3 video</a> · LinkedIn: Video · Captions and subtitles</td></tr>
-            <tr><td>Variable fonts</td><td>Fine control of weight or width from a single file</td><td><a href="https://www.linkedin.com/learning/search?keywords=CSS%3A%20Variable%20Fonts" target="_blank" rel="noopener">Course: CSS: Variable Fonts</a></td></tr>
-            <tr><td><code>&lt;table&gt;</code></td><td>Data and comparisons in your research, never for layout</td><td><a href="https://www.w3schools.com/tags/tag_table.asp" target="_blank" rel="noopener">W3 table</a> · LinkedIn: When to use tables</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="lesson-done"><button type="button" class="done-btn" data-lesson="explore">✓ Mark as done</button><span class="done-msg" aria-live="polite"></span></div>
-        </div>
-      </details>
-    </section>
+      <p class="lesson-lead">Seen something on another site and assumed it needs JavaScript? Probably not any more. Many effects that once needed a JavaScript library are now a few lines of CSS. Look here first.</p>
 
-    <!-- =====================================================
-         PART 3: NO JS
-         ===================================================== -->
-    <section id="nojs" class="lesson part--nojs">
-      <div class="part-intro">
-        <span class="part-label">Part 3</span>
-        <h2>🪄 CSS instead of JavaScript</h2>
-        <p class="part-time">⏱ 15 min</p>
-        <p>Seen something cool on another site and assumed it needs JavaScript? Probably not anymore. Many effects that once needed a JavaScript library are now a few lines of CSS. Look here first.</p>
-      </div>
 
       <div class="table-wrap">
         <table class="ref">
@@ -3028,9 +3001,130 @@ nav a::after {
           </details>
         </div>
       </div>
+      <div class="lesson-done"><button type="button" class="done-btn" data-lesson="nojs">✓ Mark as done</button><span class="done-msg" aria-live="polite"></span></div>
+        </div>
+      </details>
+    </section>
+
+    <!-- MORE TO EXPLORE -->
+    <section id="explore" class="lesson part--advanced">
+      <details class="lesson-fold">
+        <summary>
+          <span class="lesson-meta"><span class="lesson-kicker">Extras</span><span class="badge badge--optional">Optional extra</span><span class="time">⏱ 5 min</span><span class="done-mark">✓ Done</span></span>
+          <h2 class="lesson-title">More to explore</h2>
+          <span class="lesson-promise">You'll make: <strong>a few more tools, for the curious</strong></span>
+        </summary>
+        <div class="lesson-body">
+      <p class="lesson-lead">Short on time? Skip this. Curious? Each of these solves a real long-form problem.</p>
+      <div class="table-wrap">
+        <table class="ref">
+          <thead><tr><th>Tool</th><th>What it's for</th><th>Reference</th></tr></thead>
+          <tbody>
+            <tr><td><code>lang</code> on a passage</td><td>A quote in Dutch or Mandarin is read and hyphenated correctly: <code>&lt;blockquote lang="nl"&gt;</code></td><td><a href="https://www.w3schools.com/tags/att_global_lang.asp" target="_blank" rel="noopener">W3 lang</a> · LinkedIn: Supporting languages</td></tr>
+            <tr><td>Multi-column text</td><td>Newspaper-style columns for a short section or a glossary</td><td><a href="https://www.w3schools.com/css/css3_multiple_columns.asp" target="_blank" rel="noopener">W3 Columns</a></td></tr>
+            <tr><td><code>:has()</code></td><td>Style a parent by what's inside it, e.g. <code>figure:has(figcaption)</code></td><td><a href="https://www.w3schools.com/cssref/sel_has.php" target="_blank" rel="noopener">W3 :has()</a></td></tr>
+            <tr><td>Container queries</td><td>A component that adapts to its own width, not the screen's</td><td><a href="https://www.w3schools.com/cssref/atrule_container.php" target="_blank" rel="noopener">W3 @container</a></td></tr>
+            <tr><td><code>&lt;picture&gt;</code> / <code>srcset</code></td><td>A different crop of an image for phones</td><td><a href="https://www.w3schools.com/tags/tag_picture.asp" target="_blank" rel="noopener">W3 picture</a> · LinkedIn: Responsive pictures</td></tr>
+            <tr><td><code>&lt;video&gt;</code> / <code>&lt;audio&gt;</code></td><td>Local media files, with captions via <code>&lt;track&gt;</code></td><td><a href="https://www.w3schools.com/tags/tag_video.asp" target="_blank" rel="noopener">W3 video</a> · LinkedIn: Video · Captions and subtitles</td></tr>
+            <tr><td>Variable fonts</td><td>Fine control of weight or width from a single file</td><td><a href="https://www.linkedin.com/learning/search?keywords=CSS%3A%20Variable%20Fonts" target="_blank" rel="noopener">Course: CSS: Variable Fonts</a></td></tr>
+            <tr><td><code>&lt;table&gt;</code></td><td>Data and comparisons in your research, never for layout</td><td><a href="https://www.w3schools.com/tags/tag_table.asp" target="_blank" rel="noopener">W3 table</a> · LinkedIn: When to use tables</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="lesson-done"><button type="button" class="done-btn" data-lesson="explore">✓ Mark as done</button><span class="done-msg" aria-live="polite"></span></div>
+        </div>
+      </details>
     </section>
 
 
+
+
+    <!-- =====================================================
+         PART 3: KEEP LEARNING
+         ===================================================== -->
+    <section id="learn" class="part--learn">
+      <div class="part-intro">
+        <span class="part-label">Part 3</span>
+        <h2>🧭 Keep learning</h2>
+        <p class="part-time">⏱ 10 min to read · then use it whenever you need it</p>
+        <p>This guide can't cover everything, and it doesn't need to. The most useful thing you can learn here is <strong>how to find things out yourself</strong>. Every web designer works this way, every day.</p>
+      </div>
+    </section>
+
+    <section id="selfteach" class="lesson part--learn">
+      <details class="lesson-fold">
+        <summary>
+          <span class="lesson-meta"><span class="lesson-kicker">Part 3</span><span class="time">⏱ 10 min</span></span>
+          <h2 class="lesson-title">How to teach yourself</h2>
+          <span class="lesson-promise">You'll learn: <strong>how to work out how any website does what it does</strong></span>
+        </summary>
+        <div class="lesson-body">
+      <p class="lesson-lead">Every website is open: its HTML and CSS are right there in your browser. When something catches your eye, you can find out how it's made in a few minutes.</p>
+      <ol class="walk">
+        <li><strong>Notice.</strong> Something on a site makes you stop: a layout, a hover, the way the notes sit. Ask what exactly you like about it.</li>
+        <li><strong>Inspect it.</strong> Right-click it and choose <em>Inspect</em>. The HTML is on the left, the CSS that styles it on the right. To see the whole file, use <em>View Page Source</em> (<kbd>⌘</kbd>+<kbd>⌥</kbd>+<kbd>U</kbd> / <kbd>Ctrl</kbd>+<kbd>U</kbd>).</li>
+        <li><strong>Find its name.</strong> Look for the property doing the work, e.g. <code>shape-outside</code> or <code>column-count</code>. Once you know what it's called, you can look it up.</li>
+        <li><strong>Look it up.</strong> Read the MDN or W3Schools page, then change their example until you understand it.</li>
+        <li><strong>Try it small,</strong> in a live box on this page or a test file, before it goes anywhere near your report.</li>
+        <li><strong>Use it, and note it.</strong> Add it to your report and keep a line in your process notes: where you saw it, what it's called, why you used it. That's research, and it's evidence for your hand-in.</li>
+      </ol>
+
+      <div class="callout">
+        <span class="label">An example</span>
+        <p>You see text that flows around a round photo. You inspect the image and find <code>shape-outside: circle()</code>. MDN explains it, you try it on one of your figures, and it works. Ten minutes, and it's yours.</p>
+      </div>
+
+      <div class="callout">
+        <span class="label">⚖️ Borrow ideas, not whole sites</span>
+        <p>Learning from other people's code is how the web works. Copying a whole design isn't. Take a technique, make it serve your own argument, and credit any code you reuse in a comment.</p>
+      </div>
+        </div>
+      </details>
+    </section>
+
+    <section id="library" class="lesson part--learn">
+      <details class="lesson-fold">
+        <summary>
+          <span class="lesson-meta"><span class="lesson-kicker">Part 3</span><span class="time">⏱ browse any time</span></span>
+          <h2 class="lesson-title">📚 The reference shelf</h2>
+          <span class="lesson-promise">Everything worth bookmarking, sorted by what you need right now.</span>
+        </summary>
+        <div class="lesson-body">
+      <div class="shelf">
+        <div class="shelf-group">
+          <h3><span aria-hidden="true">🔎</span> Look it up</h3>
+          <p class="shelf-when">When you know what you need</p>
+          <ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" rel="noopener">MDN: HTML elements</a><span>every tag, what it means, with examples</span></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank" rel="noopener">MDN: CSS reference</a><span>every property, and the reasons behind it</span></li><li><a href="https://www.w3schools.com/cssref/" target="_blank" rel="noopener">W3Schools</a><span>quick syntax checks and “Try it Yourself” boxes</span></li><li><a href="https://htmlreference.io" target="_blank" rel="noopener">htmlreference.io</a><span>the visual references from Unit 2, with <a href="https://cssreference.io" target="_blank" rel="noopener">cssreference.io</a></span></li><li><a href="https://caniuse.com" target="_blank" rel="noopener">Can I use</a><span>does this work in Safari and Firefox yet?</span></li></ul>
+        </div>
+        <div class="shelf-group">
+          <h3><span aria-hidden="true">🎓</span> Learn it step by step</h3>
+          <p class="shelf-when">When you want the whole topic</p>
+          <ul><li><a href="https://www.linkedin.com/learning-login/share?account=57077561&amp;forceAccount=false&amp;redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fhtml-essential-training-4%3Ftrk%3Dshare_ent_url%26shareId%3Dy%252BHOBmn4QNCp2W9UAmyaGA%253D%253D" target="_blank" rel="noopener">HTML Essential Training</a><span>LinkedIn Learning, free with your UAL login</span></li><li><a href="https://www.linkedin.com/learning-login/share?account=57077561&amp;forceAccount=false&amp;redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fcss-essential-training-22688362%3Ftrk%3Dshare_ent_url%26shareId%3D3Vw%252Fx%252FeZQOqGVV1icr6rUQ%253D%253D" target="_blank" rel="noopener">CSS Essential Training</a><span>LinkedIn Learning, free with your UAL login</span></li><li><a href="https://web.dev/learn/css" target="_blank" rel="noopener">Learn CSS (web.dev)</a><span>a free, modern course, one topic per page</span></li><li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank" rel="noopener">MDN: Learn web development</a><span>structured lessons with tests</span></li><li><a href="https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=890156" target="_blank" rel="noopener">Learn to Code Now (SuperHi)</a><span>a friendly e-book, in the UAL Library</span></li></ul>
+        </div>
+        <div class="shelf-group">
+          <h3><span aria-hidden="true">📖</span> Read and think</h3>
+          <p class="shelf-when">When you want to go deeper</p>
+          <ul><li><a href="https://book.webtypography.net/" target="_blank" rel="noopener">Web Typography, Richard Rutter</a><span>reading type on screen, in depth</span></li><li><a href="https://practicaltypography.com" target="_blank" rel="noopener">Practical Typography, Matthew Butterick</a><span>typography rules you can use today</span></li><li><a href="https://cyberfeminismindex.com" target="_blank" rel="noopener">Cyberfeminism Index, Mindy Seu</a><span>a publication that is both website and book</span></li><li><span class="shelf-plain">Ludovico, <cite>Post-Digital Print</cite> · Waerea, <cite>Access Questions for Self-Publishing</cite></span><span>your Unit 5 readings, on Moodle</span></li></ul>
+        </div>
+        <div class="shelf-group">
+          <h3><span aria-hidden="true">👀</span> Discover</h3>
+          <p class="shelf-when">When you want ideas</p>
+          <ul><li><a href="https://kabk.github.io/govt-theses-15/" target="_blank" rel="noopener">KABK archive, 2015</a><span>35 student publications as websites</span></li><li><a href="https://pudding.cool" target="_blank" rel="noopener">The Pudding</a><span>visual essays: long reads designed for the screen</span></li><li><a href="https://brutalistwebsites.com" target="_blank" rel="noopener">Brutalist Websites</a><span>sites that bend the rules on purpose</span></li><li><a href="https://www.typewolf.com" target="_blank" rel="noopener">Typewolf</a><span>what fonts real sites use, and good pairings</span></li><li><a href="https://fontsinuse.com" target="_blank" rel="noopener">Fonts In Use</a><span>type in books, posters and websites, by typeface</span></li><li><a href="https://www.are.na" target="_blank" rel="noopener">Are.na</a><span>collect what you find, in one place</span></li></ul>
+        </div>
+        <div class="shelf-group">
+          <h3><span aria-hidden="true">✅</span> Check your work</h3>
+          <p class="shelf-when">Before you show it</p>
+          <ul><li><a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C validator</a><span>finds unclosed tags and typos in your HTML</span></li><li><a href="https://wave.webaim.org/" target="_blank" rel="noopener">WAVE</a><span>checks alt text, contrast and headings</span></li><li><a href="https://developer.chrome.com/docs/devtools" target="_blank" rel="noopener">Chrome DevTools</a><span>the guide to Inspect, from the people who make it</span></li><li><a href="https://p5js.org/tutorials/field-guide-to-debugging/" target="_blank" rel="noopener">Field Guide to Debugging</a><span>a kind, illustrated way to think about bugs</span></li></ul>
+        </div>
+        <div class="shelf-group">
+          <h3><span aria-hidden="true">🙋</span> Ask a person</h3>
+          <p class="shelf-when">When you are stuck for more than 20 minutes</p>
+          <ul><li><span class="shelf-plain">HTML/CSS drop-in tutorials</span><span>sign up on the Unit 5 Moodle page</span></li><li><span class="shelf-plain">Digital technicians</span><span>in the Digital Labs at CSM</span></li><li><span class="shelf-plain">Your peers</span><span>someone on your table has already solved it</span></li><li><a href="#ai">AI, with intention</a><span>to explain, not to write it for you</span></li></ul>
+        </div>
+      </div>
+        </div>
+      </details>
+    </section>
 
   </main>
 </div>

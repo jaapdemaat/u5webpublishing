@@ -16,7 +16,7 @@
 @font-face{ font-family:"Roboto Mono"; src:url("../fonts/roboto-mono-latin-600-normal.woff2") format("woff2"); font-weight:600; font-display:swap; }
 
 /* Palette (Adobe Color): indigo #1F0062 (main), blue #0B78B3,
-   red #D73220, brown #68150A, cream #F9ECE5 (paper).
+   red #D73220 (warnings), cream #F9ECE5.
    Blue and red get a darker "-deep" shade for text, because the
    original swatches are below 4.5:1 contrast as text on cream. */
 :root{
@@ -32,10 +32,7 @@
   --red-deep: #A12618;
   --red-tint: #FBEAE9;
   --red-tint-2: #F6D2CE;
-  --brown: #68150A;
-  --brown-deep: #4E1008;
-  --brown-tint: #F3E6E2;
-  --brown-tint-2: #DECCC9;
+  --cream-2: #E6D5CC;
   --cream: #F9ECE5;
 
   /* Older names kept so every component still works */
@@ -214,7 +211,7 @@ h3:first-child{ margin-top: 0; }
    (start, recap, AI, Part 4, resources). */
 .part{ --accent: var(--blue); --accent-deep: var(--blue-deep); --accent-tint: var(--blue-tint); --accent-tint-2: var(--blue-tint-2); }
 .part--advanced{ --accent: var(--indigo); --accent-deep: var(--indigo); --accent-tint: var(--indigo-tint); --accent-tint-2: var(--indigo-tint-2); }
-.part--nojs{ --accent: var(--brown); --accent-deep: var(--brown); --accent-tint: var(--brown-tint); --accent-tint-2: var(--brown-tint-2); }
+.part--learn{ --accent: var(--indigo); --accent-deep: var(--indigo); --accent-tint: var(--indigo-tint); --accent-tint-2: var(--indigo-tint-2); }
 .part--studio{ --accent: var(--indigo); --accent-deep: var(--indigo); --accent-tint: var(--indigo-tint); --accent-tint-2: var(--indigo-tint-2); }
 
 /* Contents: part labels and highlights in each part's colour */
@@ -224,9 +221,9 @@ h3:first-child{ margin-top: 0; }
 .toc .toc-part--advanced > .toc-part-label{ color: var(--indigo); }
 .toc .toc-part--advanced > ul{ border-left-color: var(--indigo-tint-2); }
 .toc .toc-part--advanced a.active{ color: var(--indigo); background: var(--indigo-tint); }
-.toc .toc-part--nojs > .toc-part-label{ color: var(--brown); }
-.toc .toc-part--nojs > ul{ border-left-color: var(--brown-tint-2); }
-.toc .toc-part--nojs a.active{ color: var(--brown); background: var(--brown-tint); }
+.toc .toc-part--learn > .toc-part-label{ color: var(--indigo); }
+.toc .toc-part--learn > ul{ border-left-color: var(--indigo-tint-2); }
+.toc .toc-part--learn a.active{ color: var(--indigo); background: var(--indigo-tint); }
 .toc .toc-part--studio > .toc-part-label{ color: var(--indigo); }
 .toc .toc-part--studio > ul{ border-left-color: var(--indigo-tint-2); }
 .toc .toc-part--studio a.active{ color: var(--indigo); background: var(--indigo-tint); }
@@ -263,8 +260,6 @@ h3:first-child{ margin-top: 0; }
   font-weight: 800;
 }
 .part-intro p{ color: var(--ink); max-width: 720px; }
-/* Part 3 banner uses the same light pink as the Part 2 banner */
-.part--nojs .part-intro{ background: var(--indigo-tint); }
 
 /* ---------- Callouts ---------- */
 .callout{
@@ -802,7 +797,7 @@ ol.walk code, .diagram figcaption code{ white-space: normal; overflow-wrap: anyw
 .insp-dir{ font-size: 0.66rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; }
 .insp-dir--minimal{ background: var(--blue-tint); color: var(--blue-deep); }
 .insp-dir--editorial{ background: var(--indigo-tint); color: var(--indigo); }
-.insp-dir--experimental{ background: var(--brown-tint); color: var(--brown); }
+.insp-dir--experimental{ background: var(--indigo); color: #fff; }
 .insp-name{ font-size: 0.82rem; color: var(--muted); margin: -4px 0 10px; }
 .insp-title{ font-size: 1.15rem; line-height: 1.25; margin: 0 0 6px; }
 .insp-title a{ color: var(--ink); text-decoration: none; }
@@ -818,3 +813,16 @@ ol.walk code, .diagram figcaption code{ white-space: normal; overflow-wrap: anyw
 
 /* Line up thumbnails across a row, whatever the title length */
 @supports (grid-template-rows: subgrid){ .insp{ row-gap: 20px; } .insp-card{ display: grid; grid-template-rows: subgrid; grid-row: span 3; gap: 0; } }
+
+/* ===== Part 3: the reference shelf ===== */
+.shelf{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 8px 0 12px; }
+@media (max-width: 640px){ .shelf{ grid-template-columns: 1fr; } }
+.shelf-group{ border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px 12px; background: var(--paper); }
+.shelf-group h3{ font-size: 1.05rem; margin: 0; }
+.shelf-when{ font-size: 0.78rem; color: var(--muted); margin: 2px 0 10px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+.shelf-group ul{ list-style: none; padding: 0; margin: 0; }
+.shelf-group li{ padding: 6px 0; }
+.shelf-group li > a, .shelf-plain{ display: block; font-weight: 600; color: var(--ink); }
+.shelf-group li > span:last-child{ display: block; font-size: 0.85rem; color: var(--muted); line-height: 1.4; }
+.shelf-group li > span:last-child a{ color: inherit; }
+ol.walk > li{ max-width: none; }

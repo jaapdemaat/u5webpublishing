@@ -16,7 +16,7 @@ A self-paced, student-facing guide for BA Graphic Communication Design (Central 
 - An Inspiration section: eight English-language long-form publications by KABK graphic design students (2015), each with what to look at and the lesson that teaches it
 - Part 2 "Make it yours": three creative directions (minimal, editorial, experimental) and three challenges, followed by optional technique lessons
 - "From website to PDF" (Lesson 21): a print stylesheet for a clean PDF, and Paged.js for a book-like PDF
-- "CSS instead of JavaScript" reference, and a help & resources section with troubleshooting answers (UAL Library, LinkedIn Learning via UAL login, MDN, debugging guide)
+- Lesson 22 "Effects without JavaScript", and Part 3 "Keep learning": how to teach yourself, plus a reference shelf, and a help & resources section with troubleshooting answers (UAL Library, LinkedIn Learning via UAL login, MDN, debugging guide)
 - Links to W3Schools and LinkedIn Learning for each topic
 
 ## Publishing on GitHub Pages
@@ -33,7 +33,7 @@ The site uses no external services. Fonts are in `/fonts` (Roboto, Roboto Mono a
 
 | What | Where |
 | --- | --- |
-| Colours, fonts, layout | `css/site.css` — palette at the top: indigo `#1F0062` (main), blue `#0B78B3` (Part 1), indigo (Part 2), brown `#68150A` (Part 3), white page background. Red `#D73220` is used for warnings. Blue and red use darker `-deep` shades for text, for contrast. |
+| Colours, fonts, layout | `css/site.css` — palette at the top: indigo `#1F0062` (main), blue `#0B78B3` (Part 1), indigo (Part 2), cream `#F9ECE5` with indigo (Part 3), white page background. Red `#D73220` is used for warnings. Blue and red use darker `-deep` shades for text, for contrast. |
 | Lessons, diagrams, starter code | `index.html` — each lesson is a `<section class="lesson">`; each live editor is a `<div class="playground">` holding `<textarea class="pg-src" data-lang="html">` and `data-lang="css"` |
 | Editor behaviour, contents highlight, progress | `js/playground.js` |
 | Exercise images | `images/` (sealand.jpg, dazzle-ship.jpg, collage-poster.jpg); Inspiration thumbnails in `images/kabk/` |
